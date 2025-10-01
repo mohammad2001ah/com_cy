@@ -4,7 +4,8 @@ import styled from 'styled-components';
 import axios from 'axios';
 import { AuthContext } from '../../context/AuthContext';
 import { useContext, useState } from 'react';
-
+// No additional imports are needed for the refactor as the code already uses @mui/material and @mui/icons-material.
+// The code is already updated to use styled-components for styling instead of @material-ui/styles.
 const TodoItem = (props) => {
   const { user } = useContext(AuthContext);
   const [checked, setChecked] = useState(props.todo.isCompleted);
